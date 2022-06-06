@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Json Editing</title>
+
+    <script src="https://ajaxorg.github.io/ace-builds/src-min-noconflict/ace.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <p>Here's an exemple of what I call <b>minecraft JSON</b>. (Highlighted in blue)</p>
+    <code><span>/execute as @a[nbt=</span><b>{Inventory:[{ Slot: 102b, id: "minecraft:elytra", Count: 1b }]}</b><span>]</span></code>
+
+    <input type="text" id="minecraftCommand" placeholder="Minecraft Json Value">
+    <button id="toJson">Process Minecraft Json</button>
+
+    <div id="editorContainer"></div>
+    <button id="toMinecraftJson">To Minecraft Json</button>
+</body>
+</html>
