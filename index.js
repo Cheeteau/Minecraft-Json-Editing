@@ -26,7 +26,7 @@ toMinecraftJsonBtn.addEventListener("click", () => {
 
     
     const correctValue = editor.getValue().replace(/"(\w+)"\s*:/g, "$1:").replace(/"([0-9]+b)"/g, "$1");
-    const flatify = correctValue.replace(/(\r\n|\n|\r)/gm,"").replace(/\t/g, " ").replace(/  +/g, " ");
+    const flatify = correctValue.replace(/(\r\n|\n|\r)/gm,"").replace(/\t/g, " ").replace(/  +/g, "");
     editor.session.setMode("ace/mode/text");
     editor.setValue(flatify);
 });
